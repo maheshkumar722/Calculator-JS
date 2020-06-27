@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	background:url(cal.jpg);
+	background-repeat: no-repeat;
+}
+
+input[type="button"]{
+	width: 20%;
+	height: 20%;
+	font-size:25px;
+	color: white;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.answer{
+	width: 80%;
+	height:7vh;
+	font-size: 25px;
+	padding: 5px;
+	color: white;
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Calculator </title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+	function back() {
+    var value = document.getElementById("answer").value;
+    document.getElementById("answer").value = value.substr(0, value.length - 1);
+}
+	function insert(num) {
+		document.getElementById('answer').value += num;
+	}
+	function equal() {
+		var exp = document.getElementById('answer');
+		
+		exp.value = eval(exp.value);
+		console.log(exp.value);
+
+
+	}
+
+
+
+</script>
+
+<body>
+	<div class="Calulator">
+
+		<input class="answer" type="text" id="answer" value=''> <br></br>
+		<input type="button" value="C" onclick="answer.value = '' " id="Clear">
+		<input type="button" value="<" onclick="back()">
+		<input type="button" value="/" onclick="insert(this.value)">
+		<input type="button" value="*" onclick="insert(this.value)">
+
+		<br></br>
+
+		<input type="button" value="7" onclick="insert(this.value) ">
+		<input type="button" value="8" onclick="insert(this.value) ">
+		<input type="button" value="9" onclick="insert(this.value) ">
+		<input type="button" value="-" onclick="insert(this.value) ">
+
+		<br></br>
+		<input type="button" value="4" onclick="insert(this.value) ">
+		<input type="button" value="5" onclick="insert(this.value)">
+		<input type="button" value="6" onclick="insert(this.value)">
+		<input type="button" value="+" onclick="insert(this.value)">
+
+		<br></br>
+		<input type="button" value="1" onclick="insert(this.value)">
+		<input type="button" value="2" onclick="insert(this.value)">
+		<input type="button" value="3" onclick="insert(this.value)">
+		<input type="button" style="" value="=" onclick=" equal() ">
+
+
+		<br></br>
+		<input class="colspan=2" style="width: 40%;" type="button" value="0" onclick="insert(this.value)">
+		<input type="button" value="." style="width: 41%;" onclick="insert(this.value)">
+
+
+
+
+
+
+
+
+	</div>
+
+
+</body>
+
+</html>
